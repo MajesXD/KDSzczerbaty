@@ -122,6 +122,9 @@ body {
         justify-content: center;
         font-weight: 300;
     }
+    .login_button:hover {
+        cursor: pointer
+    }
 
     .login_remind {
         width: 100%;
