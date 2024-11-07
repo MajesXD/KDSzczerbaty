@@ -121,9 +121,14 @@ body {
         align-items: center;
         justify-content: center;
         font-weight: 300;
+        user-select: none;
     }
     .login_button:hover {
         cursor: pointer
+    }
+
+    .login_button:active {
+        background-color: #0a335c;
     }
 
     .login_remind {
