@@ -10,6 +10,17 @@
     <!-- <script src="server.js"></script> -->
 </head>
 <body>
+
+    <script>
+    document.addEventListener("keydown", function(event) {
+    const loginField = document.getElementById("login_bracket");
+    const passwordField = document.getElementById("password_bracket");
+    if (event.key === "Enter" && (document.activeElement === loginField || document.activeElement === passwordField)) {
+        logowanie();
+    }
+});
+    </script>
+
     <div class="login_main">
 
         <div class="login_main_left">

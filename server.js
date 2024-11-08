@@ -32,7 +32,6 @@ async function logowanie(database, login, password) {
         return null;
     }
 }
-
 app.post('/login', async (req, res) => {
     const {login, password} = req.body;
     try {
