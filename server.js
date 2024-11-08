@@ -22,9 +22,9 @@ async function connectToDatabase() {
   }
 // -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-async function logowanie(database) {
+async function logowanie(database, login, password) {
     const collection_lekarze = database.collection('baza_lekarze');
-    const lekarz = await collection_lekarze.findOne({ login: 'majesxddd' });
+    const lekarz = await collection_lekarze.findOne({login: login, haslo: password});
     if (lekarz) {
         return lekarz;
     }
@@ -33,10 +33,11 @@ async function logowanie(database) {
     }
 }
 
-app.get('/login', async (req, res) => {
+app.post('/login', async (req, res) => {
+    const {login, password} = req.body;
     try {
         const database = await connectToDatabase();
-        const lekarz = await logowanie(database);
+        const lekarz = await logowanie(database, login, password);
     
         if (lekarz) {
             res.json(lekarz);
@@ -49,17 +50,6 @@ app.get('/login', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-
-
-
-
-
-
-
-
-
-
-
 
 // Nasłuchiwanie servera ---------------------------------------------------------------------------------------------------------------------------------
 app.listen(port, () => {
