@@ -28,7 +28,16 @@ function logowanie() {
             const current_ulica = data.ulica;
             const current_nr_mieszkania = data.nr_mieszkania;
             const current_specjalizacja = data.specjalizacja;
-
+            localStorage.setItem('current_login', data.login);
+            localStorage.setItem('current_haslo', data.haslo);
+            localStorage.setItem('current_imie', data.imie);
+            localStorage.setItem('current_nazwisko', data.nazwisko);
+            localStorage.setItem('current_nr_tel', data.nr_tel);
+            localStorage.setItem('current_kod_pocztowy', data.kod_pocztowy);
+            localStorage.setItem('current_miasto', data.miasto);
+            localStorage.setItem('current_ulica', data.ulica);
+            localStorage.setItem('current_nr_mieszkania', data.nr_mieszkania);
+            localStorage.setItem('current_specjalizacja', data.specjalizacja);
             console.log('Zalogowano jako:', data);
 
         })
