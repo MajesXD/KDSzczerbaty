@@ -52,6 +52,11 @@ img {
             width: 50%;
         }
 
+
+    .panel_button:hover {
+        cursor: pointer;
+    }
+    
     .panel_main {
         height: 7.5vh;
         width: 100%;
