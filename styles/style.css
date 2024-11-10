@@ -2,7 +2,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: poppins;
+    font-size: 2vh;
     color: #051F38;
 }
 
@@ -26,14 +27,14 @@ img {
 
 .panel_div {
     height: 100vh;
-    width: 8%;
+    width: 8vw;
     background-color: #051F38;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-size: 14px;
+    font-size: 1.6vh;
     font-weight: 300;
 }
 
@@ -72,7 +73,7 @@ img {
     .panel_wizyty {
         height: 7.5vh;
         width: 100%;
-        margin-bottom: 25vh;
+        margin-bottom: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -126,7 +127,7 @@ img {
             height: 100%;
             width: 15%;
             color: #5485D1;
-            font-size: 18px;
+            font-size: 2vh;
             display: flex;
             align-items: center;
         }
@@ -200,7 +201,7 @@ img {
                     width: 100%;
                     color: #051F38;
                     font-weight: 500;
-                    font-size: 14px;
+                    font-size: 1.6vh; 
                     display: flex;
                     align-items: end;
                     justify-content: right;
@@ -210,7 +211,7 @@ img {
                     width: 100%;
                     color: #051F38;
                     font-weight: 400;
-                    font-size: 14px;
+                    font-size: 1.6vh;
                     display: flex;
                     align-items: start;
                     justify-content: right;
@@ -233,24 +234,33 @@ img {
         display: flex;
     }
 
-.button_dark {
-    height: 30px;
-    width: 120px;
-    background-color: #051F38;
+.button {
+    height: 3.5vh;
+    width: 14vh;
     border: solid;
-    border-color: #051F38;
     border-width: 1px;
     border-radius: 100px;
-    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.6vh;
 }
 
-.button_dark img {
-    height: 10px;
-    width: 10px;
+    .button_dark {
+        background-color: #051F38;
+        border-color: #051F38;
+        color: white;
+    }
+
+    .button_red {
+        background-color: #9A0000;
+        border-color: #9A0000;
+        color: white;
+    }
+
+.button img {
+    width: 1.5vh;
+    aspect-ratio: 1/1;
     margin-left: 5px;
 }

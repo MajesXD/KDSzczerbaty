@@ -2,7 +2,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: poppins;
+    font-size: 1.8vh;
 }
 
 .login_main{
@@ -25,25 +26,28 @@ body {
 .login_main_left {
     height: 100%;
     width: 50%;
-
     display: flex;
     flex-direction: column;
 }
 
     .login_logo_div {
-        height: 30%;
-        width: 100%;
-        margin-left: 10%;
+        height: 15vh;
+        width: 25vw;
+        margin-left: 8%;
         margin-top: 7%;
     }
 
     .login_logo2_div {
-        height: 70%;
-        width: 100%;
+        height: 35vh;
+        width: 30vw;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
+    .login_logo1 {
+        height: 12vh;
+        width: 15vw;
     }
 
     .login_logo2 {
@@ -76,7 +80,7 @@ body {
         display: flex;
         align-items: center;
         margin-left: 10%;
-        font-size: 25px;
+        font-size: 2.5vh;
         font-weight: 500;
         color: #051F38;
     }
@@ -100,7 +104,7 @@ body {
         box-sizing: border-box;
         padding-left: 15px;
         outline: none;
-        font-size: 14px;
+        font-size: 1.4vh;
     }
 
         .login_bracket:nth-of-type(2), .login_bracket:nth-of-type(3) {

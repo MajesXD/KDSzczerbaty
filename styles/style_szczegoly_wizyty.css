@@ -11,6 +11,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
+    font-size: 1.8vh;
 }
 
 .content_top {
@@ -86,7 +87,9 @@
             }
 
             .szczegoly_dane_os:nth-of-type(3) {
-                width: 75%;
+                width: fit-content;
+                padding-left: 4px;
+                padding-right: 4px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -135,7 +138,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                font-size: 14px;
+                font-size: 1.8vh;
                 }
 
                 .szczegoly_dane_os2 p {
@@ -153,12 +156,52 @@
 .content_middle {
     height: 55%;
     width: 100%;
-    background-color: beige;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+    .content_middle_side {
+        height: 100%;
+        width: 48%;
+    }
+
+        .content_middle_title {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-weight: 500;
+            font-size: 2.5vh;
+        }
+
+        .content_middle_text {
+            height: 80%;
+            width: 100%;
+        }
+
+            .content_middle_textfield {
+                height: 100%;
+                width: 100%;
+                border-color: #051F38;
+                border-radius: 20px;
+                border-width: 1px;
+                padding: 2vh;
+                box-sizing: border-box;
+                padding-bottom: 30vh;
+                outline: none;
+            }
 
 .content_bottom {
     height: 15%;
     width: 100%;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_bottom .button {
+    width: 16vh;
 }
