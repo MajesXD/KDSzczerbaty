@@ -5,12 +5,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #F8F8F9;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-family: poppins;
+    color: #051F38;
 }
 
 p {
@@ -81,7 +82,7 @@ img {
     .panel_wyloguj {
         height: 7.5vh;
         width: 100%;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -172,6 +173,7 @@ img {
             .banner_filter {
                 height: 28%;
                 width: 12%;
+                
             }
             .banner_filter img {
                 height: 100%;
@@ -230,3 +232,25 @@ img {
         height: calc(85vh - (0.92*3vw));
         display: flex;
     }
+
+.button_dark {
+    height: 30px;
+    width: 120px;
+    background-color: #051F38;
+    border: solid;
+    border-color: #051F38;
+    border-width: 1px;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.button_dark img {
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+}
