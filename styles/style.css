@@ -13,6 +13,16 @@ body {
     font-family: poppins;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 35%;
+    width: 35%;
+}
+
 .panel_div {
     height: 100vh;
     width: 8%;
@@ -22,6 +32,8 @@ body {
     align-items: center;
     justify-content: space-between;
     color: white;
+    font-size: 14px;
+    font-weight: 300;
 }
 
     .panel_logo {
@@ -32,6 +44,12 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+        .panel_logo img {
+            height: 50%;
+            width: 50%;
+        }
+
     .panel_main {
         height: 7.5vh;
         width: 100%;
@@ -40,6 +58,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .panel_pacjenci {
         height: 7.5vh;
         width: 100%;
@@ -48,6 +67,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .panel_wizyty {
         height: 7.5vh;
         width: 100%;
@@ -57,6 +77,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     .panel_wyloguj {
         height: 7.5vh;
         width: 100%;
@@ -66,14 +87,12 @@ body {
         align-items: center;
         justify-content: center;
     }
-    p {
-        margin: 0;
-        padding: 0;
-    }
+
     .panel_current {
         color: #9ED3C3;
         position: relative;
     }
+
     .panel_current::after{
         content: "";
         position: absolute;
@@ -100,21 +119,69 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: blue;
     }
 
         .banner_name {
-
+            height: 100%;
+            width: 15%;
+            color: #5485D1;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
         }
 
         .banner_search {
-
+            height: 100%;
+            width: 30%;
+            margin-right: 35%;
+            display: flex;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
         }
+
+            .banner_search_field {
+                height: 28%;
+                width: 80%;
+                border-radius: 20px;
+                border: 0;
+                padding-left: 3%;
+                outline: none;
+            }
+            .banner_search_field::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+                appearance: none;
+            }
+                .search_img {
+                    height: 28%;
+                    width: 15%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 17%;
+                }
+
+                .search_img img {
+                    height: 50%;
+                    width: 50%;
+                }
+
+            .banner_filter {
+                height: 28%;
+                width: 12%;
+            }
+            .banner_filter img {
+                height: 100%;
+                width: 100%;
+            }
+            
 
         .banner_user {
             height: 70%;
-            width: 15%;
-            background-color: deeppink;
+            width: 30%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -129,23 +196,37 @@ body {
                 .banner_user_login {
                     height: 50%;
                     width: 100%;
-                    background-color: aqua;
+                    color: #051F38;
+                    font-weight: 500;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: end;
+                    justify-content: right;
                 }
                 .banner_user_spec {
                     height: 50%;
                     width: 100%;
-                    background-color: black;
+                    color: #051F38;
+                    font-weight: 400;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: right;
             }
             .banner_user_pic {
-                height: 100%;
-                width: 30%;
-                background-color: crimson;
+                height: 80%;
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-
+                .banner_user_pic_img {
+                    height: 80%;
+                    width: 80%;
+                }
 
     .content_field {
         width: 100%;
         height: calc(85vh - (0.92*3vw));
         display: flex;
-        background-color: darkmagenta;
     }
