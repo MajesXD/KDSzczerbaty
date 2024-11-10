@@ -245,22 +245,36 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 1.6vh;
+    user-select: none;
 }
 
-    .button_dark {
-        background-color: #051F38;
-        border-color: #051F38;
-        color: white;
+    .button:hover {
+        cursor: pointer
     }
 
-    .button_red {
-        background-color: #9A0000;
-        border-color: #9A0000;
-        color: white;
+    .button img {
+        width: 1.5vh;
+        aspect-ratio: 1/1;
+        margin-left: 5px;
     }
 
-.button img {
-    width: 1.5vh;
-    aspect-ratio: 1/1;
-    margin-left: 5px;
+.button_dark {
+    background-color: #051F38;
+    border-color: #051F38;
+    color: white;
 }
+    .button_dark:active {
+        background-color: #0a335c;
+        border-color: #0a335c;
+    }
+
+.button_red {
+    background-color: #9A0000;
+    border-color: #9A0000;
+    color: white;
+}
+    .button_red:active {
+        background-color: #841a1a;
+        border-color: #841a1a;
+    }
+
