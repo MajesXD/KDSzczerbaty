@@ -1,3 +1,179 @@
 .banner_search {
     display: none;
 }
+
+.content_left {
+height: 100%;
+width: 50%;
+background-color: rgb(206, 240, 240);
+}
+
+.content_right {
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.8vh;
+}
+
+    .content_right_title {
+        height: 10%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+
+    }
+
+    .content_right_profil {
+        height: 30%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .content_right_profil::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        background-color: #f3f3f3;
+    }
+
+        .szczegoly_avatar {
+            height: 40%;
+            width: 11%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+        }
+
+            .szczegoly_avatar img {
+                height: 100%;
+                width: 90%;
+            }
+
+        .szczegoly_dane_osobowe1 {
+            height: 100%;
+            width: 40%;
+        }
+
+            .szczegoly_dane_os {
+                display: flex;
+                flex-direction: row;
+                font-weight: 300;
+            }
+
+            .szczegoly_dane_os:nth-of-type(3) {
+                width: fit-content;
+                padding-left: 4px;
+                padding-right: 4px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: #9ED3C3;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+            }
+            
+                .szczegoly_dane_os:nth-of-type(3):hover {
+                    cursor: pointer;
+                }
+
+            .szczegoly_dane_os:nth-of-type(4) {
+                margin-top: 15%;
+            }
+
+            .szczegoly_dane_os p {
+                margin-left: 5px;
+                font-weight: 500;
+            }
+
+            .szczegoly_dane_os img {
+                height: 7%;
+                width: 7%;
+                margin-left: 3%;
+            }
+
+        .szczegoly_dane_osobowe2 {
+            height: 90%;
+            width: 45%;
+            margin-left: 5%;
+        }
+
+            .szczegoly_dane_squares {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .szczegoly_dane_os2 {
+                height: 90%;
+                aspect-ratio: 1/1;
+                border-radius: 10px;
+                background-color: #f3f3f3; 
+                font-weight: 500; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8vh;
+                }
+
+                .szczegoly_dane_os2 p {
+                    font-weight: 300;  
+                }
+
+            .sczegoly_dane_profil_button {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+
+    .content_right_termin {
+        height: 45%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+        .szczegoly_dane {
+            display: flex;
+            flex-direction: row;
+            font-weight: 300;
+        }
+
+        .szczegoly_dane p {
+            margin-left: 5px;
+            font-weight: 500;
+        }
+
+        .szczegoly_dane:nth-of-type(3) {
+            margin-bottom: 20%;
+        }
+    
+    .content_right_buttons {
+        height: 15%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content_right_buttons .button_dark {
+        width: 17vh;
+    }

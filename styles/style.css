@@ -273,6 +273,16 @@ img {
         border-color: #0a335c;
     }
 
+.button_light {
+    background-color: #ffffff;
+    border-color: #051F38;
+    color: #051F38;
+}
+    .button_light:active {
+        background-color: #0a335c;
+        border-color: #0a335c;
+    }
+    
 .button_red {
     background-color: #9A0000;
     border-color: #9A0000;
