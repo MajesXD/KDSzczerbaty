@@ -4,9 +4,184 @@
 
 .content_left {
 height: 100%;
-width: 50%;
-background-color: rgb(206, 240, 240);
+width: 45%;
+margin-right: 5%;
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: center;
 }
+
+    .content_left_title {
+        height: 5%;
+        width: 84%;
+        font-size: 1.6vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .content_left_searchfield {
+        height: 10%;
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+        .content_left_search {
+            height: 100%;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+        }
+
+            .content_left_search_field {
+                height: 50%;
+                width: 90%;
+                border-radius: 20px;
+                border: 0;
+                padding-left: 3%;
+                outline: none;
+            }
+            .content_left_search_field::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+                appearance: none;
+            }
+                .search_img {
+                    height: 40%;
+                    width: 15%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 8%;
+                }
+
+                .search_img img {
+                    height: 50%;
+                    width: 50%;
+                }
+        .content_left_add_button {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content_left_add_button .button {
+            width: 16vh;
+        }
+
+    .content_left_wizyty {
+        height: 85%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_left_wizyty_wizyta {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .first_wizyta .content_left_wizyty_godzina {
+        font-weight: 700;
+    }
+
+        .content_left_wizyty_godzina {
+            height: 100%;
+            width: 12.5%;
+            display: flex;
+            align-items: center;
+            font-size: 2.8vh;
+            position: relative;
+        }
+
+         .content_left_wizyty_godzina::after {
+            content: "";
+            background-color: #5385D1;
+            height: 15%;
+            width: 15%;
+            border-radius: 100px;
+            right: 0;
+            position: absolute;
+         }
+
+         .next_wizyta {
+            position: relative;
+         }
+         
+         .next_wizyta::after {
+            content: "";
+            background-color: #5385D1;
+            height: 100%;
+            width: 0.1%;
+            left: 11.4%;
+            bottom: 48%;
+            position: absolute;
+         }
+
+            .content_left_wizyty_info {
+                height: 80%;
+                width: 81%;
+                margin-right: 3%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: rgb(255, 255, 255);
+            }
+
+                .content_left_wizyta_name {
+                    height: 100%;
+                    width: 65%;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 2%;
+                }
+
+                .content_left_szczegoly_button {
+                    height: 100%;
+                    width: 35%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .content_left_szczegoly_button .button {
+                    width: 16vh;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content_right {
     height: 100%;
